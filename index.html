@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ocong Survival</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MENU AWAL -->
+  <div id="menu" class="screen">
+    <h1>OCONG SURVIVAL</h1>
+    <button id="startBtn">Mulai Game</button>
+
+    <p class="desc">
+      Bantu Ocong kabur dari kejaran Pak Ustadz di hutan mencekam.
+      Lewati rintangan dan bertahan selama mungkin!
+    </p>
+
+    <p class="creator">Game by: Akhdan Putra Andaha</p>
+  </div>
+
+  <!-- GAMEPLAY -->
+  <div id="gameContainer" class="hidden">
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- SCORE -->
+    <div id="score">Score: 0</div>
+
+    <!-- TOMBOL LOMPAT -->
+    <button id="jumpBtn">LOMPAT</button>
+  </div>
+
+  <!-- GAME OVER -->
+  <div id="gameOver" class="screen hidden">
+    <h2>GAME OVER</h2>
+    <p id="finalScore"></p>
+    <p id="message"></p>
+    <button id="backMenuBtn">Kembali ke Menu</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

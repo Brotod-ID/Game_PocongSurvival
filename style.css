@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: black;
+  color: white;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Layar umum */
+.screen {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* MENU */
+#menu h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+#menu button {
+  padding: 15px 30px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.desc {
+  width: 80%;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.creator {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* CANVAS GAME */
+#gameCanvas {
+  display: block;
+  background: url("assets/image/bgNight.png") no-repeat center/cover;
+}
+
+/* SCORE */
+#score {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* TOMBOL LOMPAT */
+#jumpBtn {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 18px 40px;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  background: crimson;
+  color: white;
+}
+
+/* GAME OVER */
+#gameOver h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+#gameOver button {
+  padding: 15px 30px;
+  font-size: 18px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+}

@@ -41,9 +41,9 @@ const deathSound = new Audio("assets/sounds/death.mp3"); // ← SOUND MATI
 menuSound.loop = true;
 chaseSound.loop = true;
 
-// ==========================
+
 // SETUP CANVAS RESPONSIVE
-// ==========================
+
 function resizeCanvas() {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
@@ -51,9 +51,9 @@ function resizeCanvas() {
 resizeCanvas();
 window.addEventListener("resize", resizeCanvas);
 
-// ==========================
+
 // PLAYER (OCONG)
-// ==========================
+
 let ocong = {
   x: 100,
   y: 200,
@@ -64,9 +64,9 @@ let ocong = {
   jumpPower: -10
 };
 
-// ==========================
+
 // MULAI GAME
-// ==========================
+
 startBtn.onclick = () => {
   gameState = "playing";
   menu.classList.add("hidden");
